@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+<link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+<link rel="stylesheet" href="css/leaflet-measure.css">
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+<title>ChumSeang</title>
+<link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">ท่องเที่ยวชุมแสง</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">หน้าแรก<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#TravelPlace">สถานที่ท่องเที่ยว</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">สถานบริการ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">เกี่ยวกับเรา</a>
+          </li>
+        </ul>
+      </div>
+	</nav>
+	<div class="home" id="home">
+      <h6 style="background-color:#F60; text-align:center; padding:10px; margin:0">แผนที่ท่องเที่ยวชุมแสง</h6>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=19rB00CzgCIAYjQVNdSUYQJ9J7GZhKgq1" width="100%" height="480"></iframe>
+	</div>
+	
+	<div class="TravelPlace" id="TravelPlace" style="width:100%; height:auto;
+	background-color:#CCC;display:flex; justify-content: flex-start; flex-wrap: wrap;">
+    	<div class="card" style="width: 17rem; margin:15px auto ; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/chumseangGallory.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">ชุมแสงแกลอรี่</h5>
+				<h6 class="card-subtitle mb-2 text-muted">ตลาดร้อยปีชุมแสง</h6>
+				<p class="card-text">แหล่งรวบรวมภาพถ่ายในอดีตของชุมแสง เป็นสถานที่จัดนิทรรศการเพื่อแสดงผลงานภาพถ่าย</p>
+			</div>
+		</div>	
+		<div class="card" style="width: 17rem; margin:15px auto; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/download1.jpeg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">สะพานหิรัญนฤมิต</h5>
+				<h6 class="card-subtitle mb-2 text-muted">ตลาดร้อยปีชุมแสง</h6>
+				<p class="card-text">สะพานแขวนแห่งอำเภอชุมแสง เป็นไฮไลท์คู่ชุมขนที่น่าสนใจ สร้างขึ้นในปี 2552 เพื่อให้ผู้คนสองฝากแม่น้ำน่านสัญจรข้ามผ่านไปมา</p>
+			</div>
+		</div>
+		
+		<div class="card" style="width: 17rem; margin:15px auto; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/download2.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">ราชานุสาวรีย์ สมเด็จพระเจ้าตากสินมหาราช</h5>
+				<h6 class="card-subtitle mb-2 text-muted">ตลาดร้อยปีชุมแสง</h6>
+				<p class="card-text">ตั้งอยู่บริเวณเขื่อนกั้นแม่น้ำน่าน ฝั่งตลาดชุมแสง เป็นถนนริมเขื่อน รับชมทัศนียภาพริมแม่น้ำน่าน ส้รางขึ้นเพื่อเทิดพระเกียรติที่ทรงกอบกู้เอกราช
+				ให้ประเทศชาติ จนบาดเจ็บด้วยกระสุนปืน </p>
+			</div>
+		</div>
+		<div class="card" style="width: 17rem; margin:15px auto; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/download3.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">สถานนีรถไฟชุมแสง</h5>
+				<h6 class="card-subtitle mb-2 text-muted">ตลาดร้อยปีชุมแสง</h6>
+				<p class="card-text">เป็นสถานีรถไฟเล็ก ๆ ที่ยังคงมีกลิ่นไอของอดีต เป็นสถานีประจำอำเภอชุมแสง สถานีสุดท้ายของจังหวัดนครสวรรค์ ในเส้นทางรถไฟสายเหนือ ก่อนเข้า
+									เขตจังหวัดพิจิตร</p>
+			</div>
+		</div>
+		
+		<div class="card" style="width: 17rem; margin:15px auto; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/download4.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">พระบรมธาตุเกยไชย </h5>
+				<h6 class="card-subtitle mb-2 text-muted">วัดเกยไชยเหนือ</h6>
+				<p class="card-text">วัดเก่าแก่ของอำเภอชุมแสง ที่อยู่จุดบรรจบแม่น้ำยมและแม่น้ำนาน เป็นวัดที่มีองค์เจดีย์บรรจุพระบรมธาตุ ทรงลังกาคว่ำ ฐานแปดเหลี่ยม ไม่ทำเสาหาร มีความสูง
+									ประมาณ 14 เมตร</p>
+			</div>
+		</div>
+		
+		<div class="card" style="width: 17rem; margin:15px auto; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/download5.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">พญาด่างเกยไชย</h5>
+				<h6 class="card-subtitle mb-2 text-muted">วัดเกยไชยเหนือ</h6>
+				<p class="card-text">เป็นสถานที่จัดแสดงรูปปั้นราชาจระเข้ยักษ์ (พญาด่างเกยไชย) ที่ใหญ่ที่สุดในประเทศไทย มีขนาดลำตัวกว้าง 7.60 เมตร ยาว 44 เมตร และมีขนาดความสูง 6.30 เมตร
+									ภายในลำตัว เป็นห้องกราบไหว้พระ  สำหรับวิปัสนากรรมฐาน และจัดแสดงซากจระเข้าที่สต๊าฟไว้</p>
+			</div>
+		</div>
+		
+		<div class="card" style="width: 17rem; margin:15px auto; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/download6.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">จุดบรรจบแม่น้ำยม-แม่น้ำน่าน</h5>
+				<h6 class="card-subtitle mb-2 text-muted">วัดเกยไชยเหนือ</h6>
+				<p class="card-text">หากย้อนเส้นทางของแม่น้ำเจ้าพระยากลับไปที่จุดบรรจบของแม่น้ำยม แม่น้ำน่าน จะพบว่าแม่น้ำสองสายนี้มาบรรจบกันที่หน้าวัดเกยไชยเหนือ โดยสีของน้ำจะต่างกันชัดเจน
+									คือสี่แดงและสีเขียว</p>
+			</div>
+		</div>
+		
+		<div class="card" style="width: 17rem; margin:15px auto; padding 5px 5px 5px 5px">
+			<img class="card-img-top" src="images/download7.jpg" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">วัดเกยไชยใต้</h5>
+				<h6 class="card-subtitle mb-2 text-muted">วัดเกยไชยใต้</h6>
+				<p class="card-text">พื้นที่ตั้งวัดเป็นที่ราบลุ่มอยู่ริมแม่น้ำน่านทางฝั่งตะวันตก พระประธานในอุโบสถเรียก “หลวงพ่อเพชร” ครองจีวรลายดอกพิกุล ปางมารวิชัย</p>
+			</div>
+		</div>
+		
+    </div>
+    
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
